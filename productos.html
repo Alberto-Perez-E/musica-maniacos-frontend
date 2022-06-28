@@ -4,11 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Música Maníacos - Productos</title>
+
+    <style>
+        body {
+            background-color: #ececec;
+            font-family: Arial;
+            text-align: center;
+            display: block;
+        }
+
+        header   {
+            background-color: #222;
+            color: #fff;
+            margin-bottom: 24px;
+            padding: 2px;
+        }
+        
+        header > p > a:hover {
+            color: #ffd700;
+        }
+
+        header > p > a {
+            padding-inline: 40px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 25px;
+            margin: 0 1.5% 24px 1.5%;
+            height: auto;
+        }
+
+        section {
+            display: table;
+            margin: 0 auto;
+            width: 94%;
+        }
+
+        article {
+            margin: 0 1.5% 24px 1.5%;
+            padding: 2px;
+        }
+
+        h2 {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 4;
+            grid-gap: 10px;
+        }
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .two {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .three {
+            grid-column: 3;
+            grid-row: 1;
+        }
+        .four {
+            grid-column: 4;
+            grid-row: 1;
+        }
+    </style>
 </head>
 <body>
     
     <header>
-        <h1>Música Maníacos</h1>
+        <h1><span style="color: #ffd700;">&#x266b;M</span>úsica Maniacos</h1>
         <p>
             <a>Inicio</a>
             <a>¿Quiénes somos?</a>
@@ -20,11 +91,19 @@
     <section>
         <h2>Productos disponibles</h2>
         <article>
-            <div>
-                <div>Barranca Abajo</div>
-                <div>Apocalipsis Zombie</div>
-                <div>Habla Tu Espejo</div>
-                <div>Porfiado</div>
+            <div class="wrapper">
+                <div class="one">
+                    <h4>Barranca Abajo</h4>
+                </div>
+                <div class="two">
+                    <h4>Apocalipsis Zombie</h4>
+                </div>
+                <div class="three">
+                    <h4>Habla Tu Espejo</h4>
+                </div>
+                <div class="four">
+                    <h4>Porfiado</h4>
+                </div>
             </div>
         </article>
     </section>
