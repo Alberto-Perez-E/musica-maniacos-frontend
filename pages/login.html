@@ -4,11 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Música Maníacos - Iniciar sesión</title>
+
+    <style>
+        body {
+            background-color: #ececec;
+            font-family: Arial;
+            text-align: center;
+            display: block;
+        }
+
+        header   {
+            background-color: #222;
+            color: #fff;
+            margin-bottom: 24px;
+            padding: 2px;
+        }
+        
+        header > p > a:hover {
+            color: #ffd700;
+        }
+
+        header > p > a {
+            padding-inline: 40px;
+            text-decoration: none;
+            color: #fff;
+        }
+        section > p > a {
+            padding-inline: 40px;
+            text-decoration: none;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 25px;
+            margin: 0 1.5% 24px 1.5%;
+            height: auto;
+        }
+
+        section {
+            display: table;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        article {
+            margin: 0 1.5% 24px 1.5%;
+            padding: 2px;
+        }
+
+        h2 {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     
     <header>
-        <h1>Música Maniacos</h1>
+        <h1><span style="color: #ffd700;">&#x266b;M</span>úsica Maniacos</h1>
         <p>
             <a href="index.html">Inicio</a>
             <a href="conocenos.html">¿Quiénes somos?</a>
@@ -24,8 +77,8 @@
             <h3>Ingresa la información solicitada para acceder.</h3>
             <form>
                 <div>
-                    <label for="correo">Correo Electrónico:</label><br />
-                    <input type="email" name="correo" placeholder="Ingrese su Correo" required maxlength="80" /><br />
+                    <label for="usuario">Usuario:</label><br />
+                    <input type="text" name="usuario" placeholder="Ingrese su Usuario" required maxlength="80" /><br />
                 </div>
                 <div>
                     <label for="contrasena">Contraseña:</label><br />
