@@ -4,11 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Música Maniacos - Gestionar Usuarios</title>
+
+    <style>
+        body {
+            background-color: #ececec;
+            font-family: Arial;
+            text-align: center;
+            display: block;
+        }
+
+        header   {
+            background-color: #222;
+            color: #fff;
+            margin-bottom: 24px;
+            padding: 2px;
+        }
+        
+        header > p > a:hover {
+            color: #ffd700;
+        }
+
+        header > p > a {
+            padding-inline: 40px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section, aside {
+            background-color: #fff;
+            border-radius: 25px;
+            margin: 0 1.5% 24px 1.5%;
+            height: auto;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+            list-style-position: inside;
+        }
+
+        section {
+            float: right;
+            width: 64%;
+        }
+
+        aside > ol > ul {
+            text-align: left;
+            padding-block: 10px;
+        }
+
+        aside > ol > ul > a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        aside > ol > ul > a:hover {
+            background-color: #222;
+            color: #fff;
+        }
+
+        article {
+            margin: 0 1.5% 24px 1.5%;
+            padding: 2px;
+        }
+
+        h2 {
+            background-color: #222;
+            color: #fff;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table, th, td {
+            padding: 4px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     
     <header>
-        <h1>Música Maníacos</h1>
+        <h1><span style="color: #ffd700;">&#x266b;M</span>úsica Maníacos</h1>
         <p>Gestionar Usuarios</p>
     </header>
 
@@ -23,33 +103,32 @@
 
     <section>
         <h2>Usuarios</h2>
+        <h4>Agregar Usuario</h4>
+        <form>
+            <div>
+                <label for="usuario">Usuario:</label><br />
+                <input type="email" name="usuario" placeholder="Ingrese su Usuario" required maxlength="80" /><br />
+            </div>
+            <div>
+                <label for="correo">Correo Electrónico:</label><br />
+                <input type="email" name="correo" placeholder="Ingrese su Correo" required maxlength="80" /><br />
+            </div>
+            <div>
+                <label for="contrasena">Contraseña:</label><br />
+                <input type="password" name="contrasena" placeholder="Ingrese su Contraseña" required maxlength="50" /><br />
+            </div>
+            <div>
+                <label for="imagen">Foto:</label><br />
+                <input type="file" name="imagen" placeholder="Ingrese una Foto" required /><br />
+            </div>
+            <div>
+                <label for="nacimiento">Fecha de Nacimiento:</label><br />
+                <input type="date" name="nacimiento" placeholder="Ingrese su Fecha de Nacimiento" required /><br />
+            </div>
+
+            <button type="button">Enviar</button>
+        </form>
         <article>
-            <h3>Agregar Usuario</h3>
-            <form>
-                <div>
-                    <label for="usuario">Usuario:</label><br />
-                    <input type="email" name="usuario" placeholder="Ingrese su Usuario" required maxlength="80" /><br />
-                </div>
-                <div>
-                    <label for="correo">Correo Electrónico:</label><br />
-                    <input type="email" name="correo" placeholder="Ingrese su Correo" required maxlength="80" /><br />
-                </div>
-                <div>
-                    <label for="contrasena">Contraseña:</label><br />
-                    <input type="password" name="contrasena" placeholder="Ingrese su Contraseña" required maxlength="50" /><br />
-                </div>
-                <div>
-                    <label for="imagen">Foto:</label><br />
-                    <input type="file" name="imagen" placeholder="Ingrese una Foto" required /><br />
-                </div>
-                <div>
-                    <label for="nacimiento">Fecha de Nacimiento:</label><br />
-                    <input type="date" name="nacimiento" placeholder="Ingrese su Fecha de Nacimiento" required /><br />
-                </div>
-
-                <button type="button">Enviar</button>
-            </form>
-
             <h3>Registros</h3>
             <table>
                 <thead>
