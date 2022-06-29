@@ -24,6 +24,32 @@
     <section>
         <h2>Usuarios</h2>
         <article>
+            <h3>Agregar Usuario</h3>
+            <form>
+                <div>
+                    <label for="usuario">Usuario:</label><br />
+                    <input type="email" name="usuario" placeholder="Ingrese su Usuario" required maxlength="80" /><br />
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico:</label><br />
+                    <input type="email" name="correo" placeholder="Ingrese su Correo" required maxlength="80" /><br />
+                </div>
+                <div>
+                    <label for="contrasena">Contraseña:</label><br />
+                    <input type="password" name="contrasena" placeholder="Ingrese su Contraseña" required maxlength="50" /><br />
+                </div>
+                <div>
+                    <label for="imagen">Foto:</label><br />
+                    <input type="file" name="imagen" placeholder="Ingrese una Foto" required /><br />
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento:</label><br />
+                    <input type="date" name="nacimiento" placeholder="Ingrese su Fecha de Nacimiento" required /><br />
+                </div>
+
+                <button type="button">Enviar</button>
+            </form>
+
             <h3>Registros</h3>
             <table>
                 <thead>
