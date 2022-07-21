@@ -1,7 +1,7 @@
 //Definición de variables
-const url3 = 'http://localhost:3000/api/articulos/'
-const url = 'http://localhost/cursos/DesarrolloWebIntegral/api/'
-const url2 = 'http://localhost/cursos/DesarrolloWebIntegral/api/?id='
+const url3 = 'http://localhost:3000/musica-maniacos-backend/articulos/'
+const url = 'http://localhost/cursos/practica/musica-maniacos-backend/'
+const url2 = 'http://localhost/cursos/practica/musica-maniacos-backend/?id='
  
 const contenedor = document.querySelector('tbody')
 let resultados = ''
